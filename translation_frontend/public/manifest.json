@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Translation Extension",
+  "version": "1.0",
+  "description": "Translate text using Google or Deepseek API",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [ "activeTab",
+  "storage",
+  "http://localhost:3001/*", 
+  "https://your-production-api.com/*"
+],
+"host_permissions": [
+    "http://localhost:3001/*",
+    "https://your-production-api.com/*"
+  ],
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'unsafe-eval'; object-src 'self'; connect-src http://localhost:3001 https://your-production-api.com"
+  },
+  "web_accessible_resources": [{
+    "resources": ["assets/*"],
+    "matches": ["<all_urls>"]
+  }]
+}

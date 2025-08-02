@@ -1,0 +1,32 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid cyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.Navbar_left, .Navbar_center, .Navbar_right {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar_heading {
+    color: cyan;
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+  color: cyan;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* html, body {
+  width: 300px; 
+  height: 400px; 
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+} */
+
