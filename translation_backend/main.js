@@ -19,7 +19,7 @@ const model = new OpenAI({
 const corsOptions = {
   origin: [
     'http://localhost:3000', // For development
-    'chrome-extension://your-extension-id' // For production
+    'chrome-extension://myExtensionId' // For production
   ],
   methods: ['GET', 'POST']
 };
