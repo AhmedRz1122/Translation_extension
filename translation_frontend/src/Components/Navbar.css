@@ -7,10 +7,12 @@
     padding: 0 20px;
     background-color: #1a1a1a;
     border-bottom: 1px solid cyan;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .Navbar_left, .Navbar_center, .Navbar_right {

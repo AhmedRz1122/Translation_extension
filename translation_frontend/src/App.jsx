@@ -1,3 +1,4 @@
+import React from 'react'
 import Translate from './pages/Translate'
 import './App.css'
 

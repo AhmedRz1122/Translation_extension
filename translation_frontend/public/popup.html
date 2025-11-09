@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Translation Extension</title>
     <style>
-      body {
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
         width: 400px;
         height: 500px;
         margin: 0;
@@ -14,11 +18,13 @@
       #root {
         width: 100%;
         height: 100%;
+        min-height: 500px;
       }
     </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script src="src/index.jsx"></script>
+    <div id="root">
+      <div style="padding: 20px; color: #fff; text-align: center;">Loading...</div>
+    </div>
   </body>
 </html>
